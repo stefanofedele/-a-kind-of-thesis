@@ -1,0 +1,480 @@
+% Chapter 1
+
+\chapter{Plasmonic exciton strong coupling on gold nanostructured surfaces covered with porphyrin layer} % Main chapter title
+
+\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%----------------------------------------------------------------------------------------
+
+
+\section{Introduction}
+
+The first investigations of matter at atomic sizes took place with the electromagnetic theories of light: Fourier analysis of diffraction patterns of light of specific frequencies reflected or transmitted by crystalline samples made possible a wide understanding of material structure and properties.
+Today a wide range of different technologies are growing up in order to further develop and investigate materials at nanoscales.
+
+Nanotechnology is the investigation and implementation of devices and structures at dimensions comparable to the atomic sizes.% challenges
+A wide range of different techniques are available today.
+
+
+
+\section{Metallic nanostructures}
+
+Metallic nanostructures can have different dimensions and different sizes and can be made of different materials, all those properties strongly change their optical response. Nanoparticles can be in suspension or ordered on flat surfaces.
+
+ Probability the simplest structures are nanospheres that can be placed in liquid suspension and can be deposited on surfaces with the aim of changing their optical properties
+
+
+Self standing gold structures are fabricated via anodized aluminium oxide (AAO) or via electrodeposition of gold into nanoporous alumina.
+
+
+
+\section{Applications}
+
+Gold nanostructured surfaces are promising interacting with electromagnetic waves of visible spectral range exhibits plasmonic effects that can interact with excitonic effects on porphyrin molecules \cite{plasmonic_review}.
+
+\begin{figure}[ht!]
+	\centering %/home/stefano/Documents/thesis/Figures/eagle.jpeg
+		\includegraphics[width=90mm]{/home/stefano/Documents/thesis/Figures/eagle.jpeg}
+	\caption{A simple caption \label{overflow}}
+\end{figure}
+
+A wide range of different applications in different disciplines such as\\
+
+electro-chemistry, catalysis, wetting, thin organic condensates, biosensing, gas or chemical sensing, non-linear optics etc.  
+
+
+
+\section{Optical measurements}
+
+
+When a beam of light reach the surface of separation between two different materials three different phenomena take place:
+\begin{itemize}
+	\item \emph{absorption}: light is converted in another form of energy
+	\item \emph{refraction}: light pass through the medium, but with a different angle
+	\item \emph{reflection}: light is reflected back to the previous medium, it can be thought as a particular type of absorption by electrical charges in the medium that behave as scattered oscillating dipoles (Rayleigh scattering) generating a new wave with some frequency and some wavelength $\lambda$.
+\end{itemize}
+
+
+%Reflection is a particular type of scattering in which the wavelength of the light is conserved.
+
+
+%background
+In an experiment in which light is scattered from a sample two different types of measurements can be done: measurements in transmission mode and in reflectance mode. In the first case the detector collect light passing through the sample, in the second case the detector collect light reflected by the samples.
+
+By definition, extinction is the amount of light that doesn't reach the detector, from which when an experiment is performed in {\bf reflectance mode} than 
+\begin{eqnarray}
+	extinction = transmittance + absorption
+\end{eqnarray}
+
+while in the case in which the experiment is performed in {\bf transmission mode}
+\begin{eqnarray}
+	extinction = scattering + absorption
+\end{eqnarray}
+
+
+
+The extinction cross section in trasmission mode of N polarizable particles is \cite{zhao2003}
+
+\begin{eqnarray}
+	C_{ext} = \frac{ 4\pi k }{ | \mathbf{ E}_{inc} |^2 }\sum_{j = 1}^N Im\left( \mathbf{ E}_{inc, j}^*\cdot \mathbf{P}_j \right)
+\end{eqnarray}
+
+It is interesting to remember that in electromagnetism the product $-\mathbf{p}\cdot\mathbf{E}$ is the energy of the electric dipole
+
+
+
+
+\section{The dielectric constant}
+
+
+The medium polarization induced by an out-coming electric fields generates a new and opposite electric field that variate over the time until a new stationary state of the medium charges take place. The time variation of the total electric field can be expressed by a time variating dielectric constant $\epsilon (t)$ of the medium until the new stationary state take place.
+
+When the time necessary to the system to relocate to its stationary state is of the some order of magnitude of the time variation of the electric field, resonance phenomena are  possible and a frequency dependent dielectric function $\widetilde{\epsilon}(\omega) $ has to be considered.
+
+
+
+When light pass from one material to another, a discontinuity of the incoming electric and magnetic field take place. When the two medium are non-magnetic, that is the most common case that happen in nature, then \emph{only} the electric field and \emph{only} the perpendicular component to the surface will experience a discontinuity. This discontinuity depends on the frequency dependent dielectric constants of the two materials ($\widetilde{\epsilon}_1(\omega)$ and $\widetilde{\epsilon}_2(\omega)$ respectively).
+
+
+Light is composed by photons with momentum $\hbar k$, if they imping a surface separation they impart a momentum perpendicular to the surface itself. The reflection of elastically scattered waves at an angle $-\theta$ is a consequence of the fact that momentum is conserved.
+
+The net momentum transferred from the electromagnetic wave to the surface is due to the magnetic field, as the time average momentum transferred by the field due to the electric field is zero.
+
+As shown later in this thesis, there is a special case in which the momentum transferred from the incoming light to the surface separation between two medium is parallel. This is the case of plasmonic waves 
+
+%\section{The dielectric constant}
+
+% the charge relocation take place at the medium surface separation
+%When an electric field propagates inside a medium,
+
+
+
+
+
+\section{Drude approximation}
+
+%The spectral range in
+%the effect of an outcoming electromagnetic wave interacting with a conduction electron can be seen as 
+
+The interaction between electromagnetic waves at visible spectral ranges and matter is mainly due to electrons in the last atomic shells and in crystal bonds. This interaction could be described as a many-body system constituted by atomic cores fixed at their equilibrium configuration and electrons strongly interacting with electromagnetic waves (Born Oppenheimer approximation). %Although this is a strong simplification, it is still a complex system and it requires further approximations.
+
+Although this is already a huge simplification, the task of solving such a many body problem is still a formidable one. When the volume concentration of conduction electrons is sufficiently high, then each electron interact with ion cores strongly screened by other conduction electrons and a response of the total system to an out coming electromagnetic perturbation can be described as constituted by a set of classical particles with an effective mass $m_{eff}$ (quasiparticles) different from the well known electron mass.
+
+%negatively charged 
+%the complex problems of many-body constituted by conduction electrons interacting with atom cores and between themselves can be approximated by a gas of negatively charged quasiparticles with an effective mass $m_{eff}$.
+
+Under those considerations the classical Drude model, in which conduction electrons are supposed to be a gas of classical charged particles, gives rise an accurate description of the metal {\bf response function}. According to this model, this interaction is expressed by a second order non homogeneous linear equation
+
+%a classical harmonic damped and forced oscillator, that is 
+\begin{eqnarray}\label{eq:classicalModel}
+	\ddot{x} + \gamma\dot{x} + \omega_0^2 x = F_0e^{i\omega t}
+\end{eqnarray}
+
+in which
+\begin{itemize}
+	\item $\ddot{x}$ is the particle acceleration
+	\item $\gamma\dot{x}$ is the damping factor related to the excitement lifetime
+	\item $\omega_0^2 x$ is the harmonic term related to any particle confinement
+	\item $F_0e^{i\omega t}$ is the external perturbation
+\end{itemize}
+
+% the first order term, known as damping, is related to the lifetime of the excitation, 
+
+Eq. \ref{eq:classicalModel} together with
+
+\begin{eqnarray}
+	\mathbf{P} & = & n\mathbf{x}\\
+	\mathbf{D} & = & \epsilon\mathbf{E} + \mathbf{P}	
+\end{eqnarray}
+%https://www.phys.ksu.edu/personal/wysin/notes/dielectricsA.pdf
+
+gives rise the mathematical expression of the frequency dependent dielectric constant $\widetilde{\epsilon}(\omega)$
+
+%https://www.phys.ksu.edu/personal/wysin/notes/dielectricsA.pdf
+
+in the case of conduction electron the zero order term $\omega_0^2 x$ is zero and the dielectric response of the system coming from eq. \ref{eq:classicalModel} is 
+
+% and its solution gives rise the complex frequency dependent dielectric constant $\widetilde{\epsilon}(\omega)$
+
+%Those conduction electrons can be approximated by a gas of negatively charged quasiparticles with an effective mass $m_{eff}$.
+
+
+\begin{eqnarray}\label{eq:Drude}
+	\widetilde{\epsilon}_D \left(\omega\right) = \widetilde{\epsilon}_1(\omega) + j\widetilde{\epsilon}_2(\omega) = 1 - \frac{\omega_p^2}{\omega^2 + j\gamma\omega}
+\end{eqnarray}
+
+where $\omega_p = ne^2/\epsilon_0m_{eff}$ is known as the \emph{plasma frequency} and it can be interpreted as the frequency of which the metal stop to behave as a conductor and start to behave as a dielectric, $n$ is the density conduction electrons of the medium, , $\epsilon_0$ the vacuum dielectric constant, $\gamma$ as the harmonic damping factor, that is related to the plasmon bandwidth $\Gamma$.\\
+
+We can explicit the real and imaginary part of eq. \ref{eq:Drude}
+\begin{eqnarray}
+	\widetilde{\epsilon}_1(\omega) & = & 1 - \frac{\omega_p^2}{\omega^2 + \gamma^2} \\ \label{eq:Re_epsilon}
+	\widetilde{\epsilon}_2(\omega) & = & \frac{\gamma/\omega}{\omega^2 + \gamma^2} \label{eq:Im_epsilon}
+\end{eqnarray}
+
+and observe that the real part of the frequency dependent dielectric constant \ref{eq:Re_epsilon} can have both positive  and negative values while the imaginary part \ref{eq:Im_epsilon} can be only positive.
+
+
+%When the damping factor is zero, the plasma frequency is real and it constitute the frequency for which the dielectric constant move from negative values to positive values.
+In the case in which electrons are bounded, such as $d$ atomic shells in gold, the zero order term $\omega_0^2 x$ has to be considered, an inter-band transition to the conduction band take place and the Drude-Sommerfield approximation gives rise a dielectric function with a resonance peak at a frequency $\omega_0$
+
+\begin{eqnarray}
+	\epsilon_{interband} = 1 + \frac{ \widetilde{ \omega}_p^2 }{ \left( \omega_0^2 - \omega^2 \right) - i\gamma\omega }
+\end{eqnarray}
+
+$\omega_p$ is a limiting frequency above which the metal is no longer metallic 
+
+The (longitudinal?) dielectric constant is complex expression that is linearly related to the longitudinal conductivity function $\sigma (\omega)$%, from the set equations
+%\begin{eqnarray}
+%	\frac{ \partial \mathbf{D} }{ \partial{t} } & = & \frac{ \partial \mathbf{E} }{ \partial{t} } + 4\pi \mathbf{J}\\
+%	\mathbf{D} & = & \epsilon \mathbf{E}\\
+%	\mathbf{J} & = & \sigma \mathbf{E}
+%\end{eqnarray}
+
+%and assuming a time variation of the field as $\exp{i\omega t}$ you can easily get
+\begin{eqnarray}
+	\widetilde{\epsilon}(\omega) = 1 + 4\pi i \sigma(\omega)/\omega
+\end{eqnarray}
+
+
+
+The extinction cross section in trasmission mode of N polarizable particles is \cite{zhao2003}
+
+\begin{eqnarray}
+	C_{ext} = \frac{ 4\pi k }{ | \mathbf{ E}_{inc} |^2 }\sum_{j = 1}^N Im\left( \mathbf{ E}_{inc, j}^*\cdot \mathbf{P}_j \right)
+\end{eqnarray}
+
+It is interesting to remember that in electromagnetism the product $-\mathbf{p}\cdot\mathbf{E}$ is the energy of the electric dipole
+
+
+
+
+
+\section{dielectric function, refractive index and extinction coefficient}
+
+
+%The dielectric constant \ref{eq:Drude} is a complex function of frequency, the real part $Re(\epsilon(\omega))$ can be positive or negative, a negative value of $Re(\epsilon(\omega))$ means that the charge motion on the medium surface is in anti-phase as compared to the incoming electromagnetic radiation.
+
+%???while the imaginary part is proportional to the extinction coefficient in transmission mode???, it represent the wave damping inside the medium and only positive values can be accepted.
+
+The medium refractive index is well known to be related to the dielectric constant $\epsilon$ and diamagnetic constant $\mu$ the last one being equal to $1$ in non-magnetic materials
+
+%The dynamical and cinetical prop
+
+
+%\begin{eqnarray}
+%	n + i\kappa = \sqrt{\epsilon\nu}\approx\sqrt{\epsilon}
+%\end{eqnarray}
+
+%The refractive index is 
+
+\begin{eqnarray}\label{eq:n}
+	n(\omega) + i\kappa(\omega) \approx\ \sqrt{ \widetilde{\epsilon}(\omega) } = \sqrt{ \widetilde{\epsilon}_1(\omega) + j\widetilde{\epsilon}_2(\omega)}
+\end{eqnarray}
+
+%The refractive index changes the value of the wavelength, a planar electromagnatic wave such as that one in eq. \ref{eq:planar_wave}
+
+
+Eq. \ref{eq:n} can be readjusted in order to explicit the real and imaginary part
+%in which the real and imaginary parts can be explicite
+
+\begin{eqnarray}\label{eq:n_epsilon}
+	n^2 - \kappa^2 & = & \widetilde{\epsilon}_1(\omega)\\
+	2n\kappa & = & \widetilde{\epsilon}_2(\omega)
+\end{eqnarray}
+
+both $n$ and $k$ have to be positive and even $\widetilde{\epsilon}_2(\omega)$ has to be positive, while $\widetilde{\epsilon}_1(\omega)$ has to be negative
+
+
+
+A plane wave  travelling inside a medium with a complex refractive index $n+i\kappa$ increases its momentum $k$ of a factor $n$ and undergoes to an exponential damping expressed by the imaginary part $\kappa$ of the refractive index
+
+%\begin{eqnarray}\label{eq:planar_wave}
+%	\mathbf{E} = \mathbf{E}_0 e^{i \mathbf{k}\cdot\mathbf{x} -\omega t }
+%\end{eqnarray}
+
+%when pass through a dielectric with a complex refractive index $n + i k$, changes as
+
+\begin{eqnarray}\label{eq:planar_wave}
+	\mathbf{E} = \mathbf{E}_0 e^{i (\mathbf{k}\cdot\mathbf{x}n -\omega t ) - \mathbf{k}\cdot\mathbf{x}\kappa }
+\end{eqnarray}
+
+the imaginary part is known as {\bf extinction coefficient}, and it can be calculated from the absorbence spectrum in trasmission mode
+
+
+% it has to be positive and it is related to the absorption spectra $A_{\nu}$ in transmission mode, that can be expressed as
+
+\begin{eqnarray}
+	T = \frac{signal}{background} = e^{-\tau}= 10^{-A}
+\end{eqnarray}
+where $T$ is the transmittance, $\tau$ is known as optical depth and A is the Absorbance.
+
+from the \ref{eq:planar_wave} it can be easily seen that 
+
+\begin{eqnarray}
+	E & = & E_0e^{-2\pi \kappa z \lambda}\\
+	\kappa & = & \frac{\lambda\log{T} }{2\pi z}
+\end{eqnarray}
+
+
+where c  is the molar concentration of the absorbing material and d the distance that the light has to travel in that given material.
+% check the relationship between extinction and (absorption?) cross section
+
+
+
+
+Kramers-Kronig are two integral equations that connect the real part of the refractive index to the imaginary part and vice versa. The frequency response of the dielectric constant is the Fourier Transform $widetilde{\epsilon}(\omega)$ (Laplace?) of the time dependent dielectric constant$\epsilon (t)$ that is a quantity positively defined
+\begin{eqnarray}
+	\widetilde{\epsilon}(\omega) & = & \int_{-\infty}^{+\infty}\epsilon (t)e^{i\omega t} \\
+	\epsilon (t) & > & 0
+\end{eqnarray}
+from which it can easily de deduced that
+\begin{eqnarray}
+	\widetilde{\epsilon}(-\omega) & = & \widetilde{\epsilon}^*(\omega)
+\end{eqnarray}
+
+while the real part of the refractive index $\widetilde{\epsilon}_1(\omega)$ is even for sign inversion, the imaginary part is $\widetilde{\epsilon}_2(\omega)$ odd
+
+%Each of the two part of the refractive index is the Hilbert Transform for the other part, that is a convolution with a function such as $1/(\omega - \omega_0)$
+
+Real and imaginary parts of the dielectric function are related between each other via the {\bf Kramers-Kronig} relation, that follow from the assumption that $n$ is an analytical function of $\omega$ and from mathematical symmetries
+
+\begin{eqnarray}
+	n & = & \frac{2}{\pi}P\int_0^{\infty} \frac{\omega ' k( \omega ' )}{ \omega '^2 - \omega ^2 }d\omega '\\
+	k & = & - \frac{2\omega}{\pi}P\int_0^{\infty} \frac{ k(\omega ') }{ \omega '^2 - \omega ^2 }d\omega '
+\end{eqnarray}
+
+
+
+
+
+
+\section{Noble metals interaction with electromagnetic waves at visible spectral range}
+
+
+
+In an ideal conductor the charge relocation instantaneously completely damp the electric field inside the medium, the dielectric constant $\epsilon$ tends to infinity and the electric field inside the medium is zero.
+In a real conductor the charge relocation on the medium surface requires a finite time and the damping is not always complete.
+%oscillatory behaviour of the electromagnetic wave that affect the stationary state of the medium
+%This is the case of interaction between electrons in the last shell in many atoms with electromagnetic waves in the visible spectral range.
+%The electrons in the last shell on noble metals such as Silver and Gold
+The Silver and Gold electronic configuration are $[Kr]4d^{10}5s^{1} $ and  $[Xe]4f^{14}ds^{10}6s^1 $ respectively and they are known as noble metals as their $d$ shell completely filled up. Once they aggregate in crystal, the uppermost electrons $s^1$ of  each atom generate the metallic bound, that constitute the conduction electron band of the crystal itself, while the $d$ and $f$ electrons remain almost unperturbed at their atomic shells. 
+
+
+
+In the case of Silver, visible light interact only with conduction electrons, and eq. \ref{eq:Drude} is greatly satisfied, while in the case of Gold interband transition from $d$ electrons take place at a wavelength of $450$ $nm$ and the measured imaginary part of the dielectric function increases much more strongly as predicted by the Drude-Sommerfield theory. The dielectric function is the sum of the Drude dielectric function with an interband factor $\epsilon_{IB}$ \cite{link1999}
+
+\begin{eqnarray}
+	\widetilde{\epsilon}(\omega) = \widetilde{\epsilon}_{IB}(\omega) + \widetilde{\epsilon}_{D}(\omega)
+\end{eqnarray}
+
+
+
+
+
+
+\section{Surface plasmons}
+
+Surface Plasmons are colletrctive motion of charges at metal surfaces that take place when an electromagnetic wave of proper frequency interact with the surface itself. They are waves that propagates along the surface: the perturbation is going to a collective charge motion perpendicular to the direction of propagation and to the surface itself and they transfer a momentum along the surface.
+
+Setting the $x-z$ so that $x$ is along the metallic surface and $z$ is perpendicular to it and the origin is on the surface itself, in order to have a wave that propagates along the surface it is necessary that 
+
+\begin{eqnarray}
+	\frac{ k_{z1} }{ \widetilde{\epsilon}_1(\omega) } + \frac{ k_{z2} }{ \widetilde{\epsilon}_2(\omega) } = 0
+\end{eqnarray}
+
+it is evident that to have an in plane wave it is necessary that both $k_{z1}$ and $k_{z2}$ are two decaying factor of the wave, it means that they have to be of opposite sign, so even $\widetilde{\epsilon}_1$ and $\widetilde{\epsilon}_2$ have to be of opposite sign.
+
+A necessary condition to have plasmonic effects on metallic surface is that the surface has a \emph{negative} dielectric function.
+
+The momentum transferred from the electromagnetic wave to the plasmonic surface has to be in-planar, time average of the out of plane component of the momentum is zero.
+
+The electromagnetic wave interacting with the surface has to match both the energy and the in-plane momentum.
+While the first one is easy to be realized, the second one can be hard, and for this reason plasmons on metal surfaces can be generated only at particular configurations.
+
+
+
+\section{Theoretical explanation of nanostructures optical response}
+
+
+The theory to be used to investigate light scattering to particles depends monstly on the size of the particle as compared to the electromagnetic wavelength. When the particles are much smaller than the light wavelength, then the Rayleigh scattering has to be used.
+
+
+
+The quasi-electrostatic approximation in which the field is considered constant all over the nanoparticle is available in all that cases in which the nanoparticle sizes are much less than the electromagnetic wavelength $d << \lambda $. In this case the scattering process can be described via the Mie Theory that calculate the light scattered by metallic spherical nanoparticles in colloidal form by using the absorption and scattering of electromagnetic radiation \cite{link1999}. Today this theory is widely used to calculate extinction spectra.
+
+\begin{eqnarray}
+	\kappa = \frac{18\pi NV\epsilon_m^{3/2}}{\lambda} \frac{\epsilon_2}{ [ \epsilon_1 + 2\epsilon_m]^2 + \epsilon_2^2}
+\end{eqnarray}
+
+
+where
+\begin{itemize}
+	\item N is the number of particles
+	\item V is the volume
+	\item $\epsilon_m$ is the dielectric constant of the medium
+	\item $\epsilon_1$ and $\epsilon_2$ are the real and imaginary part of the dielectric constant
+	\item $\lambda$ the electromagnetic wavelength
+
+\end{itemize}
+
+Today different shaped nanoparticles are available, particularly gold nanorod are studied in the present thesis, their extinction spectra can be theoretically calculated from the Maxwell-Garnett Theory, that is an extension of the Mie theory
+
+\begin{eqnarray}
+	\kappa = \frac{2\pi N\epsilon_m^{3/2}}{3\lambda}\sum_{j=1}^3\frac{\epsilon_2/P_j^2}{\left( \epsilon_1 + \frac{1-P_j}{P_j}\epsilon_m \right)^2 + \epsilon_2^2}
+\end{eqnarray} 
+
+where $P_j$ are the {\bf depolarization factors} for the three axes.
+
+For gold nanorods the plasmon resonance splits into two modes: one longitudinal mode along the axis of the rod and a transverse mode perpendicular to the first.
+
+The shape of the particle can be included into the extinction formula as a screening parameter, the optical absorption spectrum shows only one plasmon band, which {\bf blueshiift} with increasing aspect ratio.
+
+In our experiment in which angle resolved uvVis reflectance is performed, we can argue that a redshift of the dip position take place when the angle is increased, as increasing the angle is equivalent in decreasing the aspect ratio.
+
+The main difference in the extinction spectrum, as compared to the gold nanospheres, is the presence of not only one peak but two peaks, one related to the plasmonic resonance at the top of the nanostructure, the other to the plasmonic resonance by side of the nanostructure.
+
+%----------------------------------------------------------------------------------------
+\section{Polaritons}
+
+
+
+The electromagnetic coupling between a radiation field and a quasipariticle such as a {\bf plasmon}, a {\bf phonon} and an {\bf exciton} leads to the concept of a new quasiparticle that is the {\bf polariton}
+
+
+%transverse optical phonons leads too the concept of new quasiparticle, known as {\bf polariton}.
+
+Lattice vibrations on semiconductors crystals such as GaAs, or AlAs are properly understood in terms of quantum theory of harmonic crystals. dispersion relation of longitudinal and transverse modes exhibit a trend 
+
+The quantum of the oscillatory movement of atoms in crystals, known as phonon,
+exhibit a dispersion relation that can be coupled with phonons at specific frequencies, giving rice to coupling phenomena known as polaritons (?)
+
+
+
+\section{Coupling Surface Plasmon Polariton}
+
+Surface Plasmon Polariton can be generated via electromagnetic coupling, typical spectral range is in the visible range although studies of plasmonic coupling in the infrared range are present in the literature.
+
+Surface plasmon polaritons can be generated in different ways
+\begin{itemize}
+	\item Grating coupling method
+	\item Metallic nanostructured surfaces
+	\item Prism coupling (Otto configuration)
+\end{itemize}
+
+Excitons are electron-hole couples that can be generated in molecules and they are responsible for physical effects widely used in technological applications such as photovoltaic cells and photodiodes.
+
+When molecular exciton and Surface Plasmon Polaritons are generated from the some electromagnetic wavelength $\lambda$, a further coupling between polaritons and excitons can take place. This phenomena intensively studied in the scientific literature is promising for material optical response optimization and successive technological applications.
+A further coupling phenomena between 
+
+A problem that take place in plasmonic coupling is that energy and momentum coupling can not take place in the some time without any proper physical adjustment of the gold surface. One way to couple both energy and momentum is implementing proper metallic nanostructures.
+
+
+The peaks position in uvVis trasmission spectra of nanoparticles depends on the dielectric constant of the environment.
+
+\begin{eqnarray}
+k_{SPP} = \frac{\omega}{c} \sqrt{ \frac{ \epsilon_1 \epsilon_2}{ \epsilon_1 + \epsilon_2 } }
+\end{eqnarray}
+
+
+Surface plasmonic effects take place only on that type of materials that have the real part of the refractive index $\epsilon_1$ of opposite sign as compared to the real part of the medium refractive index $\epsilon_m$.
+
+
+\section{Fano Resonance}
+
+
+The asymmetric spectral shape of a spectral structure can be the fingerprint of a \emph{Fano} like resonance spectra, in which the perturbation from the external probe generate a coupling between a discrete energy level and a continuum one. The first experimental derivation of this type of interaction was in 1957 \/*\ref{Silverman}*/, in which an Electron Energy Loss Spectroscopy was performed on an $He$ gas and an asymmetric peak appeared at energies around $60$ $eV$.
+
+This type of resonance can be derived via the Green's Function
+
+\begin{eqnarray}\label{eq:Green}
+	G(\omega) = \left( \omega - H + i\delta \right)^{-1}
+\end{eqnarray}
+
+now if we call $\ket{0}$ the isolated state and $\ket{\lambda}$ the continuous one, we can expand the Local Green's Function of the unperturbed system on the isolated state $G_{00} = \bra{0} G(\omega) \ket{0}$ 
+
+\begin{eqnarray}
+	G_{00} = \bra{0} G(\omega) \ket{0} = \sum_{\lambda} \frac{ \abs{\bra{0}\ket{\lambda} }^2 }{ \omega -\epsilon_{\lambda} + i\delta }%\abs{\bra{0}\ket{\lambda}^2 
+\end{eqnarray}
+
+This is a type of spectrum that can be theoretically resolved via the use of Green's function and the spectral shape is expressed by the following formula
+
+\begin{eqnarray}\label{eq:Fano}
+	f(E) = \frac{ ( q + E^2 )^2 }{ 1 + E^2 }
+\end{eqnarray}
+
+\begin{figure}[ht!]
+	\centering %/home/stefano/Documents/thesis/Figures/eagle.jpeg
+		\includegraphics[width=100mm]{/home/stefano/Documents/thesis/Figures/fano.jpeg}
+	\caption{Fano Resonance line shape at $Q= 0$, $Q = 1$ and $Q = 3$ respectively}
+\end{figure}
+
+Fano Resonance is asymmetric 
